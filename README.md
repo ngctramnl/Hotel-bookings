@@ -3,7 +3,10 @@
 ## Business tasks
 * Identify the group of guests who typically make early bookings
 * Identify the market segments that generate the largest number of bookings, and where these bookings are made
-
+## Dataset
+* Dataset can be found in files
+## Documentation of cleaning or manipulation of data
+* Report of the analysis can be found [here](https://ngctramnl.github.io/Hotel-bookings/)
 ## Conclusions
 * Online channel has the most number of bookings
 * The group of guests who typically make early bookings do not have children
