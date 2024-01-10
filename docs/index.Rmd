@@ -1,0 +1,78 @@
+---
+title: "bookings"
+author: "Tram"
+date: "2024-01-10"
+output: html_document
+---
+
+## Setting up my environment
+
+Notes: Setting up my R environment by loading the following packages
+
+```{r loading packages, message=FALSE, warning=FALSE}
+library("tidyverse")
+library("skimr")
+library("janitor")
+library("dplyr")
+library("ggplot2")
+```
+
+## Import data
+
+```{r warning=FALSE}
+setwd("D:/Google DA/Portfolio Building/090123_Practices/Bookings")
+hotel_bookings <- read.csv("hotel_bookings.csv")
+```
+
+## Transactions by distribution types
+
+```{r}
+ggplot(data = hotel_bookings) +
+  geom_bar(aes(x = distribution_channel, fill=distribution_channel))
+```
+
+The plot shows that TA/TO channel has the most number of bookings
+
+## The relationship between booking lead time and guests traveling with children
+
+```{r warning=FALSE}
+ggplot(data=hotel_bookings) +
+  geom_point(aes(x= children, y=lead_time), color="lightblue")+
+  theme_classic()
+```
+
+This plot shows that the group of guests who typically make early bookings do not have children
+
+## Number of bookings by hotel type and market segments
+
+```{r faceting a plot, warning=FALSE}
+ggplot(data = hotel_bookings) +
+  geom_bar(mapping = aes(x = hotel)) +
+  facet_wrap(~market_segment)
+```
+
+Online segment generates the largest number of bookings, and these bookings are made for city hotels
+
+## The relationship between lead time and guests traveling with children for online bookings at city hotels
+
+### Filtering a dataset to just city hotels that are online TA
+
+```{r filtering a dataset to just city hotels that are online TA}
+onlineta_city_hotels <- filter(hotel_bookings, 
+                           (hotel=="City Hotel" & 
+                             hotel_bookings$market_segment=="Online TA"))
+```
+
+### Creating the plot
+
+```{r creating the plot, warning=FALSE}
+ggplot(data = onlineta_city_hotels) +
+  geom_point(aes(x = lead_time, y = children), color="lightblue")+
+  theme_classic()
+```
+
+* This scatterplot shows data for online bookings for city hotels
+
+* The plot reveals that bookings with children tend to have a shorter lead time, and bookings with 3 children have a significantly shorter lead time (\<200 days)
+
+* So, promotions targeting families can be made closer to the valid booking dates
