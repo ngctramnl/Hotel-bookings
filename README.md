@@ -1,10 +1,12 @@
 # Hotel bookings
 
 ## Business tasks
-* Identify the group of guests who typically make early bookings
+* Describe the group of guests who typically make early bookings
 * Identify the market segments that generate the largest number of bookings, and where these bookings are made
+* Identify the specific timing for the promotion targeted at the fastest-growing segment
 ## Dataset
 * Dataset can be found in files
+* Lead Time is the period of time (most typically measured in calendar days) between when a guest makes the reservation and the actual check-in/arrival date
 ## Documentation of cleaning or manipulation of data
 * Report of the analysis can be found [here](https://ngctramnl.github.io/Hotel-bookings/)
 ## Conclusions
