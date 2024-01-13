@@ -8,7 +8,7 @@
 * Dataset can be found in files
 * Lead Time is the period of time (most typically measured in calendar days) between when a guest makes the reservation and the actual check-in/arrival date
 ## Documentation of cleaning or manipulation of data
-* Report of the analysis can be found [here](https://ngctramnl.github.io/Hotel-bookings/)
+* Code and report of the analysis can be found [here](https://ngctramnl.github.io/Hotel-bookings/)
 ## Conclusions
 * Online channel has the most number of bookings
 * The group of guests who typically make early bookings do not have children
