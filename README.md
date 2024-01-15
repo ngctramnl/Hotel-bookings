@@ -10,10 +10,9 @@
 ## Documentation of cleaning or manipulation of data
 * Code and report of the analysis can be found [here](https://ngctramnl.github.io/Hotel-bookings/)
 ## Conclusions
-* Online channel has the most number of bookings
-* The group of guests who typically make early bookings do not have children
-* The online segment generates the largest number of bookings, and these bookings are made for city hotels
-* The plot reveals that bookings with children tend to have a shorter lead time, and bookings with 3 children have a significantly shorter lead time (<200 days). So, promotions targeting families can be made closer to the valid booking dates
+* The majority of reservations are made through an online channel, and they are made for hotels in cities.
+* The group of visitors that usually reserve early doesn't have any kids.
+* The plot indicates that reservations including children often have a shorter lead time, while reservations involving three children have an even shorter lead time (less than 200 days). So, promotions targeting families can be made closer to the valid booking dates.
 
 ## References
 * Google Data Analytics Certificate - Guided script
